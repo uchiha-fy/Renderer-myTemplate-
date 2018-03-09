@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="template" style="display:none;">
+		<div class="chat-template">
+			<div class="chat">#chat#--#chat#</div>
+		</div>
+		<div class="manager-template">
+			<div class="manager">manager</div>
+		</div>
+	</div>
+	<!-- <script src="jquery.min.js"></script> -->
+	<script src="Renderer.js"></script>
+	<script>
+		// $('body').append(Renderer.render('chat',['哈哈']));
+		var oDiv=document.createElement('div');
+		oDiv.innerHTML=Renderer.render('chat',{chat:'哈哈'});
+		document.body.appendChild(oDiv);
+	</script>
+</body>
+</html>
