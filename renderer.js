@@ -1,9 +1,9 @@
 /**
  * 该js需加载于dom生成之后
- * 全局接口 Renderer
+ * 全局接口 renderer
  * dom格式div#template>div.xxx-template+div.xxx-template,模板内容写在对应的div.xxx-template中
  */
-var Renderer=Renderer||{
+var renderer=renderer||{
 	symbol:'#',				// 标识符,正则中使用
 	/**
 	 * template值为包含所有模板的对象,键名为div#template的子代div的类名(xxx-template)去掉-template
